@@ -108,7 +108,7 @@ fn invocation_fixtures(rules: &FxHashMap<String, DeclarativeMacro>) -> Vec<(Stri
                     }
                     try_cnt += 1;
                     if try_cnt > 100 {
-                        panic!("invocaton fixture {name} cannot be generated.\n");
+                        panic!("invocation fixture {name} cannot be generated.\n");
                     }
                 }
             }
