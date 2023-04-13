@@ -374,7 +374,7 @@ struct OutlivedLocal {
 
 /// Container of local variable usages
 ///
-/// Semanticall same as `UsageSearchResult`, but provides more convenient interface
+/// Semantically same as `UsageSearchResult`, but provides more convenient interface
 struct LocalUsages(ide_db::search::UsageSearchResult);
 
 impl LocalUsages {
