@@ -197,7 +197,7 @@ fn needs_parens_for_adjustment_hints(expr: &ast::Expr, postfix: bool) -> (bool, 
     // where "expr" is the `expr` parameter, `*expr` is the edited `expr`,
     // and "parent" is the parent of the original expression...
     //
-    // For this we utilize mutable mutable trees, which is a HACK, but it works.
+    // For this we utilize mutable trees, which is a HACK, but it works.
     //
     // FIXME: comeup with a better API for `needs_parens_in`, so that we don't have to do *this*
 
