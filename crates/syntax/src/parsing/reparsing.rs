@@ -408,7 +408,7 @@ enum Foo {
 
     #[test]
     fn reparse_str_token_with_error_fixed() {
-        do_check(r#""unterinated$0$0"#, "\"", 12);
+        do_check(r#""unterminated$0$0"#, "\"", 12);
     }
 
     #[test]
