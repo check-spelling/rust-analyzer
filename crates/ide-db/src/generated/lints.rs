@@ -6548,7 +6548,7 @@ subtracting elements in an Add impl."##,
     },
     Lint {
         label: "clippy::suspicious_assignment_formatting",
-        description: r##"Checks for use of the non-existent `=*`, `=!` and `=-`
+        description: r##"Checks for use of the nonexistent `=*`, `=!` and `=-`
 operators."##,
     },
     Lint {
