@@ -801,7 +801,7 @@ fn precise_macro_call_location(
     ast: &MacroCallKind,
     db: &dyn HirDatabase,
 ) -> (InFile<SyntaxNodePtr>, Option<TextRange>, Option<String>, MacroKind) {
-    // FIXME: maaybe we actually want slightly different ranges for the different macro diagnostics
+    // FIXME: maybe we actually want slightly different ranges for the different macro diagnostics
     // - e.g. the full attribute for macro errors, but only the name for name resolution
     match ast {
         MacroCallKind::FnLike { ast_id, .. } => {
