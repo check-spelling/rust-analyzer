@@ -1967,7 +1967,7 @@ fn get_field<T: DeserializeOwned>(
     alias: Option<&'static str>,
     default: &str,
 ) -> T {
-    // XXX: check alias first, to work-around the VS Code where it pre-fills the
+    // XXX: check alias first, to work around the VS Code where it pre-fills the
     // defaults instead of sending an empty object.
     alias
         .into_iter()
