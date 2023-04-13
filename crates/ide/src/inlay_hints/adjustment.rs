@@ -148,7 +148,7 @@ pub(super) fn hints(
     Some(())
 }
 
-/// Returns whatever the hint should be postfix and if we need to add paretheses on the inside and/or outside of `expr`,
+/// Returns whatever the hint should be postfix and if we need to add parentheses on the inside and/or outside of `expr`,
 /// if we are going to add (`postfix`) adjustments hints to it.
 fn mode_and_needs_parens_for_adjustment_hints(
     expr: &ast::Expr,
@@ -183,7 +183,7 @@ fn mode_and_needs_parens_for_adjustment_hints(
     }
 }
 
-/// Returns whatever we need to add paretheses on the inside and/or outside of `expr`,
+/// Returns whatever we need to add parentheses on the inside and/or outside of `expr`,
 /// if we are going to add (`postfix`) adjustments hints to it.
 fn needs_parens_for_adjustment_hints(expr: &ast::Expr, postfix: bool) -> (bool, bool) {
     // This is a very miserable pile of hacks...
