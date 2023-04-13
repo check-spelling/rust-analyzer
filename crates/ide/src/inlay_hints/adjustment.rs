@@ -194,7 +194,7 @@ fn needs_parens_for_adjustment_hints(expr: &ast::Expr, postfix: bool) -> (bool, 
     // But we want to check what would happen if we add `*`/`.*` to the inner expression.
     // To check for inner we need `` expr.needs_parens_in(`*expr`) ``,
     // to check for outer we need `` `*expr`.needs_parens_in(parent) ``,
-    // where "expr" is the `expr` parameter, `*expr` is the editted `expr`,
+    // where "expr" is the `expr` parameter, `*expr` is the edited `expr`,
     // and "parent" is the parent of the original expression...
     //
     // For this we utilize mutable mutable trees, which is a HACK, but it works.
