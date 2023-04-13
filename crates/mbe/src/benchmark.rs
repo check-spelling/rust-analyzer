@@ -195,7 +195,7 @@ fn invocation_fixtures(rules: &FxHashMap<String, DeclarativeMacro>) -> Vec<(Stri
             Op::Ignore { .. } | Op::Index { .. } => {}
         };
 
-        // Simple linear congruential generator for determistic result
+        // Simple linear congruential generator for deterministic result
         fn rand(seed: &mut usize) -> usize {
             let a = 1664525;
             let c = 1013904223;
