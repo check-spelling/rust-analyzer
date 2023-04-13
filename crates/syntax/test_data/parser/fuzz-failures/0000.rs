@@ -45,7 +45,7 @@
                     );
                     assert!(
                         node.next_sibling().is_none() && pair.prev_sibling().is_none(),
-                        "\nfloating curlys at {:?}\nfile:\n{}\nerror:\n{}\n",
+                        "\nfloating curlies at {:?}\nfile:\n{}\nerror:\n{}\n",
                         node,
                         root.text(),
                         node.text(),
