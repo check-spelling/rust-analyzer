@@ -1522,7 +1522,7 @@ impl DefWithBody {
             match source_map.expr_syntax(expr) {
                 Ok(expr) => acc.push(MissingUnsafe { expr }.into()),
                 Err(SyntheticSyntax) => {
-                    // FIXME: Here and eslwhere in this file, the `expr` was
+                    // FIXME: Here and elsewhere in this file, the `expr` was
                     // desugared, report or assert that this doesn't happen.
                 }
             }
