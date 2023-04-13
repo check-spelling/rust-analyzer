@@ -1236,7 +1236,7 @@ mod modname {
     }
 
     #[test]
-    fn test_extract_module_for_correspoding_adt_of_impl_present_in_same_mod_but_not_in_selection() {
+    fn test_extract_module_for_corresponding_adt_of_impl_present_in_same_mod_but_not_in_selection() {
         check_assist(
             extract_module,
             r"
