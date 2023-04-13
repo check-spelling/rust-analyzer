@@ -2199,8 +2199,8 @@ fn field_props(field: &str, ty: &str, doc: &[&str], default: &str) -> serde_json
             "enumDescriptions": [
                 "Always show adjustment hints as prefix (`*expr`).",
                 "Always show adjustment hints as postfix (`expr.*`).",
-                "Show prefix or postfix depending on which uses less parenthesis, prefering prefix.",
-                "Show prefix or postfix depending on which uses less parenthesis, prefering postfix.",
+                "Show prefix or postfix depending on which uses less parenthesis, preferring prefix.",
+                "Show prefix or postfix depending on which uses less parenthesis, preferring postfix.",
             ]
         },
         "CargoFeaturesDef" => set! {
