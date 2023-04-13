@@ -4288,7 +4288,7 @@ fn hover_builtin() {
     check(
         r#"
 //- /main.rs crate:main deps:std
-cosnt _: &str$0 = ""; }
+const _: &str$0 = ""; }
 
 //- /libstd.rs crate:std
 /// Docs for prim_str
