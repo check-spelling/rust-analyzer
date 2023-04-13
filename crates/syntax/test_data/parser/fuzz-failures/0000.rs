@@ -39,7 +39,7 @@
         ast::Root::cast(self.syntax()).unwrap()
     }
     pub fn syntax(&self) -> SyntaxNodeRef {
-        self.root.brroowed()
+        self.root.borrowed()
     }
     mp_tree(root),
                     );
