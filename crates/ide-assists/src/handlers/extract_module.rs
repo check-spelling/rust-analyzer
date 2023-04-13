@@ -357,7 +357,7 @@ impl Module {
 
     fn change_visibility(&mut self, record_fields: Vec<SyntaxNode>) {
         let (mut replacements, record_field_parents, impls) =
-            get_replacements_for_visibilty_change(&mut self.body_items, false);
+            get_replacements_for_visibility_change(&mut self.body_items, false);
 
         let mut impl_items: Vec<ast::Item> = impls
             .into_iter()
@@ -366,7 +366,7 @@ impl Module {
             .collect();
 
         let (mut impl_item_replacements, _, _) =
-            get_replacements_for_visibilty_change(&mut impl_items, true);
+            get_replacements_for_visibility_change(&mut impl_items, true);
 
         replacements.append(&mut impl_item_replacements);
 
@@ -824,7 +824,7 @@ fn does_source_exists_outside_sel_in_same_mod(
     source_exists_outside_sel_in_same_mod
 }
 
-fn get_replacements_for_visibilty_change(
+fn get_replacements_for_visibility_change(
     items: &mut [ast::Item],
     is_clone_for_updated: bool,
 ) -> (
