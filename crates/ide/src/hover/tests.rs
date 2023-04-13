@@ -3115,7 +3115,7 @@ mod Foo$0 {
 }
 
 #[test]
-fn hover_doc_outer_inner_attribue() {
+fn hover_doc_outer_inner_attribute() {
     check(
         r#"
 #[doc = "Be quick;"]
