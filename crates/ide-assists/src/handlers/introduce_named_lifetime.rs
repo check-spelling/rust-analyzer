@@ -79,7 +79,7 @@ fn generate_fn_def_assist(
         match fn_params_without_lifetime.len() {
             1 => Some(fn_params_without_lifetime.into_iter().next()?),
             0 => None,
-            // multiple unnnamed is invalid. assist is not applicable
+            // multiple unnamed is invalid. assist is not applicable
             _ => return None,
         }
     };
