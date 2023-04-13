@@ -1087,7 +1087,7 @@ fn calculate_necessary_visibility(
     }
 }
 
-// This is never intended to be used as a generic graph strucuture. If there's ever another need of
+// This is never intended to be used as a generic graph structure. If there's ever another need of
 // graph algorithm, consider adding a library for that (and replace the following).
 /// Minimally implemented directed graph structure represented by adjacency list.
 struct Graph {
