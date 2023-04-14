@@ -692,7 +692,7 @@ impl Evaluator<'_> {
                         Owned(r[0..lc.len()].into())
                     }
                     BinOp::Shl | BinOp::Shr => {
-                        let shift_amout = if r128 < 0 {
+                        let shift_amount = if r128 < 0 {
                             return Err(MirEvalError::Panic(format!("Overflow in {op:?}")));
                         } else if r128 > 128 {
                             return Err(MirEvalError::Panic(format!("Overflow in {op:?}")));
@@ -700,8 +700,8 @@ impl Evaluator<'_> {
                             r128 as u8
                         };
                         let r = match op {
-                            BinOp::Shl => l128 << shift_amout,
-                            BinOp::Shr => l128 >> shift_amout,
+                            BinOp::Shl => l128 << shift_amount,
+                            BinOp::Shr => l128 >> shift_amount,
                             _ => unreachable!(),
                         };
                         Owned(r.to_le_bytes()[0..lc.len()].into())
