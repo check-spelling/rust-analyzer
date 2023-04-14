@@ -1278,7 +1278,7 @@ impl<'ctx> MirLowerCtx<'ctx> {
     /// the appropriated places.
     fn push_storage_live(&mut self, b: BindingId, current: BasicBlockId) -> Result<()> {
         // Current implementation is wrong. It adds no `StorageDead` at the end of scope, and before each break
-        // and continue. It just add a `StorageDead` before the `StorageLive`, which is not wrong, but unneeeded in
+        // and continue. It just add a `StorageDead` before the `StorageLive`, which is not wrong, but unneeded in
         // the proper implementation. Due this limitation, implementing a borrow checker on top of this mir will falsely
         // allow this:
         //
