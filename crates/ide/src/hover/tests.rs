@@ -3146,7 +3146,7 @@ mod Foo$0 {
 }
 
 #[test]
-fn hover_doc_block_style_indentend() {
+fn hover_doc_block_style_indent_end() {
     check(
         r#"
 /**
