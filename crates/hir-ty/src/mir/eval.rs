@@ -1481,7 +1481,7 @@ impl Evaluator<'_> {
                 is_dyn_method(self.db, self.trait_env.clone(), def, generic_args.clone())
             {
                 // In the layout of current possible receiver, which at the moment of writing this code is one of
-                // `&T`, `&mut T`, `Box<T>`, `Rc<T>`, `Arc<T>`, and `Pin<P>` where `P` is one of possible recievers,
+                // `&T`, `&mut T`, `Box<T>`, `Rc<T>`, `Arc<T>`, and `Pin<P>` where `P` is one of possible receivers,
                 // the vtable is exactly in the `[ptr_size..2*ptr_size]` bytes. So we can use it without branching on
                 // the type.
                 let ty = self
