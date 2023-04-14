@@ -338,7 +338,7 @@ config_data! {
         inlayHints_closingBraceHints_minLines: usize               = "25",
         /// Whether to show inlay type hints for return types of closures.
         inlayHints_closureReturnTypeHints_enable: ClosureReturnTypeHintsDef  = "\"never\"",
-        /// Closure notation in type and chaining inaly hints.
+        /// Closure notation in type and chaining inlay hints.
         inlayHints_closureStyle: ClosureStyle                                = "\"impl_fn\"",
         /// Whether to show enum variant discriminant hints.
         inlayHints_discriminantHints_enable: DiscriminantHintsDef            = "\"never\"",
