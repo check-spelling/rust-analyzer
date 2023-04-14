@@ -1206,7 +1206,7 @@ impl<'ctx> MirLowerCtx<'ctx> {
         );
         let prev_label = if let Some(label) = label {
             // We should generate the end now, to make sure that it wouldn't change later. It is
-            // bad as we may emit end (unneccessary unreachable block) for unterminating loop, but
+            // bad as we may emit end (unnecessary unreachable block) for unterminating loop, but
             // it should not affect correctness.
             self.current_loop_end()?;
             self.labeled_loop_blocks
