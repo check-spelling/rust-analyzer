@@ -773,7 +773,7 @@ fn fn_once(mut x: impl FnOnce(u8) -> u8) -> u8 {
 
     #[test]
     fn closure() {
-        // FIXME: Diagnositc spans are too large
+        // FIXME: Diagnostic spans are too large
         check_diagnostics(
             r#"
         //- minicore: copy, fn
