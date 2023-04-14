@@ -123,7 +123,7 @@ impl Interval {
     }
 
     fn write_from_interval(&self, memory: &mut Evaluator<'_>, interval: Interval) -> Result<()> {
-        // FIXME: this could be more efficent
+        // FIXME: this could be more efficient
         let bytes = &interval.get(memory)?.to_vec();
         memory.write_memory(self.addr, bytes)
     }
