@@ -2380,7 +2380,7 @@ mod s {
     }
 
     #[test]
-    fn create_method_with_cursor_anywhere_on_call_expresion() {
+    fn create_method_with_cursor_anywhere_on_call_expression() {
         check_assist(
             generate_function,
             r"
@@ -2487,7 +2487,7 @@ fn foo() {s::S::bar();}
     }
 
     #[test]
-    fn create_static_method_with_cursor_anywhere_on_call_expresion() {
+    fn create_static_method_with_cursor_anywhere_on_call_expression() {
         check_assist(
             generate_function,
             r"
