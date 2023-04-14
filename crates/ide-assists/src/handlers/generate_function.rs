@@ -900,7 +900,7 @@ fn filter_bounds_in_scope(
     }
 
     // Now we know every element that belongs to an impl would be in scope at `target`, we can
-    // filter them out just by lookint at their parent.
+    // filter them out just by looking at their parent.
     generic_params.retain(|it| !matches!(it.self_ty_param.parent(), hir::GenericDef::Impl(_)));
     where_preds.retain(|it| {
         it.node.syntax().parent().and_then(|it| it.parent()).and_then(ast::Impl::cast).is_none()
