@@ -893,7 +893,7 @@ fn filter_bounds_in_scope(
     let target_impl = target.parent().ancestors().find_map(ast::Impl::cast)?;
     let target_impl = ctx.sema.to_def(&target_impl)?;
     // It's sufficient to test only the first element of `generic_params` because of the order of
-    // insertion (see `relevant_parmas_and_where_clauses()`).
+    // insertion (see `params_and_where_preds_in_scope()`).
     let def = generic_params.first()?.self_ty_param.parent();
     if def != hir::GenericDef::Impl(target_impl) {
         return None;
