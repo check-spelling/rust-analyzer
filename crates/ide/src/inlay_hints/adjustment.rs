@@ -243,7 +243,7 @@ fn needs_parens_for_adjustment_hints(expr: &ast::Expr, postfix: bool) -> (bool, 
     };
 
     // At this point
-    // - `parent`     is the parrent of the original expression
+    // - `parent`     is the parent of the original expression
     // - `dummy_expr` is the original expression wrapped in the operator we want (`*`/`.*`)
     // - `expr`       is the clone of the original expression (with `dummy_expr` as the parent)
 
