@@ -966,7 +966,7 @@ impl Evaluator<'_> {
 
     fn make_by_layout(
         &mut self,
-        size: usize, // Not neccessarily equal to variant_layout.size
+        size: usize, // Not necessarily equal to variant_layout.size
         variant_layout: &Layout,
         tag: Option<(usize, usize, i128)>,
         values: impl Iterator<Item = Interval>,
